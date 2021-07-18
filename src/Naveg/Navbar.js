@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
+//import Registro from "../components/Registro/Registro";
 
 
 const Navbar = () => {
@@ -44,6 +45,11 @@ const Navbar = () => {
                 </Link>
               </li>
               
+              <li class="nav-item">
+                <Link class="nav-link" to="/Registro">
+                  Registro
+                </Link>
+              </li>
   
             </ul>
             <form class="d-flex">

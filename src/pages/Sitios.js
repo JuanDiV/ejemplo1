@@ -1,179 +1,57 @@
 import React from "react";
-import {Link} from "react-router-dom";
+//import {Link} from "react-router-dom";
+import CarZon from "../components/card/CarZon";
+import CarTur from "../components/card/CarTur";
+import CarBell from "../components/card/CarBell";
 //import CarrouselInicio from "../components/carrousel/CarrouselInicio";
 
 const Inicio = () => {
 return (
      
-<div >
+     
+   <div >
+
 <div class="container">
-<div class="accordion accordion-flush" id="accordionFlushExample">
+<div class="accordion" id="accordionPanelsStayOpenExample">
   <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingOne">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-        Zonas Arqueológicas
-      </button>
-    </h2>
-    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">
-
-      <div class="row">
-  <div class="col-sm-6">
-    <div class="card">
-    <img src ="/img/zonas/Palenque.jpg" class="card-img-top" alt="..."width="3%" height="10%"/>
-      <div class="card-body">
-        <h5 class="card-title">Zona Arqueológica de Palenque</h5>
-        <Link href="#" class="btn btn-primary">Ir</Link>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="card">
-    <img src ="/img/zonas/Bonampak-1.jpg" class="card-img-top" alt="..."width="3%" height="10%"/>
-      <div class="card-body">
-        <h5 class="card-title">Zona Arqueológica Bonampak</h5>
-        <Link href="#" class="btn btn-primary">Ir</Link>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="card">
-    <img src ="/img/zonas/Lagartero.jpg" class="card-img-top" alt="..."width="3%" height="10%"/>
-      <div class="card-body">
-        <h5 class="card-title">Zona Arqueológica el Lagartero</h5>
-        <Link href="#" class="btn btn-primary">Ir</Link>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="card">
-    <img src ="/img/zonas/Yaxchilan.jpg" class="card-img-top" alt="..."width="3%" height="10%"/>
-      <div class="card-body">
-        <h5 class="card-title">Zona Arqueológica de Yaxchilán</h5>
-        <Link href="#" class="btn btn-primary">Ir</Link>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-
-
-      </div>
-    </div>
-  </div>
-
-
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-        Centros Turísticos
-      </button>
-    </h2>
-    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">
-
-      <div class="row">
-  <div class="col-sm-6">
-    <div class="card">
-    <img src ="/img/centros/Metzabok.jpg" class="card-img-top" alt="..."width="3%" height="10%"/>
-      <div class="card-body">
-        <h5 class="card-title">Centro Turístico Metzabok</h5>
-        <Link href="#" class="btn btn-primary">Ir</Link>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="card">
-    <img src ="/img/centros/Cotorras.jpg" class="card-img-top" alt="..."width="3%" height="10%"/>
-      <div class="card-body">
-        <h5 class="card-title">Centro Turístico Sima de las Cotorras</h5>
-        <Link href="#" class="btn btn-primary">Ir</Link>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="card">
-    <img src ="img/centros/misol.jpg" class="card-img-top" alt="..."width="3%" height="10%"/>
-      <div class="card-body">
-        <h5 class="card-title">Centro Turístico Misol Há</h5>
-        <Link href="#" class="btn btn-primary">Ir</Link>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="card">
-    <img src ="/img/centros/Agua.jpg" class="card-img-top" alt="..."width="3%" height="10%"/>
-      <div class="card-body">
-        <h5 class="card-title">Centro Turístico Cascadas Agua Azul</h5>
-        <Link href="#" class="btn btn-primary">Ir</Link>
-      </div>
-    </div>
-  </div>
-</div>
-
-    </div>
-      </div>
-  </div>
-  
-
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        
         Bellezas Naturales
       </button>
     </h2>
-    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body" >    
-      
-      
-      <div class="row">
-  <div class="col-sm-6">
-    <div class="card">
-    <img src ="/img/bellezas/Welib.gif" class="card-img-top" alt="..."width="1%" height="1%"/>
-      <div class="card-body">
-        <h5 class="card-title">Cascadas Welib Há</h5>
-        <Link href="#" class="btn btn-primary">Ir</Link>
-      </div>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+      <div class="accordion-body">
+       </div>
+      <CarBell/>
     </div>
   </div>
-  <div class="col-sm-6">
-    <div class="card">
-    <img src ="/img/bellezas/Monteb.jpg" class="card-img-top" alt="..."width="3%" height="10%"/>
-      <div class="card-body">
-        <h5 class="card-title">Lagunas de Montebello</h5>
-        <Link href="#" class="btn btn-primary">Ir</Link>
-      </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        Centros Turísticas
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+      <div class="accordion-body">
+       </div> <CarTur/>
     </div>
   </div>
-  <div class="col-sm-6">
-    <div class="card">
-    <img src ="/img/bellezas/cañon.jpg" class="card-img-top" alt="..."width="3%" height="10%"/>
-      <div class="card-body">
-        <h5 class="card-title">Parque Nacional Cañón del Sumidero</h5>
-        <Link href="#" class="btn btn-primary">Ir</Link>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="card">
-    <img src ="img/bellezas/chiflon.jpg" class="card-img-top" alt="..."width="3%" height="10%"/>
-      <div class="card-body">
-        <h5 class="card-title">Cascadas El Chiflón</h5>
-        <Link href="#" class="btn btn-primary">Ir</Link>
-      </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        Zonas Arqueológicas
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+      <div class="accordion-body">
+       </div> <CarZon/>
     </div>
   </div>
 </div>
-      
-      
-          </div>
-    </div>
-  </div>
-  
+
 </div>
-</div>
-</div>
+   </div>     
 
       )
       

@@ -1,17 +1,3 @@
-/*import React from 'react'
-
-function CarrouselInicio() {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default CarrouselInicio */
-
-
-
 import React from "react";
 
 
@@ -48,7 +34,7 @@ return (
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="/img/p1.png" className="d-block mx-auto" alt="..." width="80%" height="95%"/>
+            <img src="/img/p1.png" className="d-block mx-auto" alt="..." width="70%" height="75%"/>
             <div class="carousel-caption d-none d-md-block">
               <h5>Zona Arqueológica de Palenque</h5>
               <p class="text-white bg-dark"> Es una de las ciudades arqueológicas más interesantes de México, conocerla es descubrir el 
@@ -57,7 +43,7 @@ return (
             </div>
           </div>
           <div class="carousel-item">
-            <img src="/img/Bonam.jpg" className="d-block mx-auto" alt="..." width="80%" height="95%" />
+            <img src="/img/Bonam.jpg" className="d-block mx-auto" alt="..." width="70%" height="75%" />
             <div class="carousel-caption d-none d-md-block">
               <h5>Zona Arqueológica de Bonampak</h5>
               <p class="text-white bg-dark">
@@ -68,7 +54,7 @@ return (
             </div>
           </div>
           <div class="carousel-item">
-            <img src="/img/lag.jpg" className="d-block mx-auto" alt="..." width="80%" height="95%" />
+            <img src="/img/lag.jpg" className="d-block mx-auto" alt="..." width="70%" height="75%" />
             <div class="carousel-caption d-none d-md-block">
               <h5><strong>Zona Arqueológica el Lagartero</strong></h5>
               <p class="text-white bg-dark"> 
