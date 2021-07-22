@@ -4,6 +4,8 @@ import './index.css';
 //import Principal from './Principal';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+//import firebaseConfig from './firebase-config';
 //import 'animate.css/animate.min.css'  
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -12,9 +14,16 @@ import reportWebVitals from './reportWebVitals';
 import 'react-toastify/dist/ReactToastify.css';
 
 
+//import {
+ // FirebaseAppProvider
+//} from 'reactfire'
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+
+   
+    <App />              
+    
   </React.StrictMode>,
   document.getElementById('root')
 );

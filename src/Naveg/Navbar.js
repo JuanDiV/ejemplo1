@@ -41,7 +41,7 @@ const Navbar = () => {
               
               <li class="nav-item">
                 <Link class="nav-link" to="/Login">
-                  Login
+                  Comentarios
                 </Link>
               </li>
               

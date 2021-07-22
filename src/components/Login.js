@@ -10,7 +10,7 @@ function Login() {
     _id: "",
     nombre: "",
     apellidos: " ",
-    direccion: "",
+    comentario: "",
   };
 
   const [values, setValues] = useState(variablesInicio);
@@ -25,7 +25,7 @@ function Login() {
     await ConexionApi.post("/persona/crearPersona",{
       nombre: values.nombre,
       apellidos: values.apellidos,
-      direccion: values.direccion
+      comentario: values.comentario
     }).then((res)=>{
       toast ("dato guardado correctamente",{
       position: "top-center",
@@ -68,7 +68,7 @@ function Login() {
  await ConexionApi.put(`/persona/actualizarPersona/${id}`,{
    nombre: values.nombre,
    apellidos: values.apellidos,
-   direccion: values.direccion
+   comentario: values.comentario
  }).then((res)=>{
    console.log(res.data);
  });
@@ -105,10 +105,10 @@ function Login() {
     <div>
       <div className="card">
         <div className="card-body">
-          <h5 className="card-title">Datos personales</h5>
-          <h6 className="card-subtitle mb-2 text-muted">
-            Ingresar la información requerida
-          </h6>
+          <h2 className="card-title">Sección de Comentarios</h2>
+          <h5 className="card-subtitle mb-2 text-muted">
+            Si desea dejar comentarios sobre la página favor de llenar los recuadros
+          </h5>
 
           <form className="row g-3 needs-validation" onSubmit={onClick}>
             <div className="col-md-4">
@@ -141,13 +141,13 @@ function Login() {
             </div>
             <div class="col-md-4">
               <label for="validationCustom02" class="form-label">
-                Direccion
+                Comentarios
               </label>
               <input
                 type="text"
                 class="form-control"
-                name="direccion"
-                value={values.direccion}
+                name="comentario"
+                value={values.comentario}
                 onChange={onChange}
                 required
               />
@@ -165,10 +165,10 @@ function Login() {
         <table class="table">
   <thead>
     <tr>
-      <th scope="col">#</th>
+      
       <th scope="col">Nombre</th>
       <th scope="col">Apellidos</th>
-      <th scope="col">Direccion</th>
+      <th scope="col">Comentarios</th>
       <th scope="col">Editar</th>
       <th scope="col">Eliminar</th>
     </tr>
@@ -176,10 +176,10 @@ function Login() {
   {persona.map((person, index)=>(
     <tbody key={person._id}>
     <tr>
-      <th scope="row">{index+1}</th>
+      
       <td>{person.nombre}</td>
       <td>{person.apellidos}</td>
-      <td>{person.direccion}</td>
+      <td>{person.comentario}</td>
       <td><button type="button" class="btn btn-info" onClick={()=>ListarOnePersona(person._id)}>Editar</button></td>
       <td><button type="button" class="btn btn-danger" onClick={()=>EliminarPersona(person._id)}>Eliminar</button></td>
     </tr>
