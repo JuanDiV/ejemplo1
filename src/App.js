@@ -1,4 +1,7 @@
 //import Principal from './Principal';
+import Loginn from './components/Loginn';
+import Logout from './components/Logout';
+
 //import FormDatos from './components/FormDatos';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
@@ -7,7 +10,6 @@ import Footer from './Naveg/Footer';
 import Inicio from './pages/Inicio';
 import Sitios from './pages/Sitios';
 import Login from './components/Login';
-import Registro from './components/Registro/Registro';
 import Bonampak from './Ventanas/Bonampak';
 import Palenque from './Ventanas/Palenque';
 import Yaxchilan from './Ventanas/Yaxchilan';
@@ -18,22 +20,30 @@ import Cañon from './Ventanas/Cañon';
 import Montebello from './Ventanas/Montebello';
 import Chiflon from './Ventanas/Chiflon';
 
+
 //import FormDatos from './components/FormDatos';
 
 import { ToastContainer } from 'react-toastify';
 //import { Toast } from "react-toastify/dist/components";
 
-function App() {
+
+
+const App = () => {
+
+//function App() {
   return (
     <div className="App"> 
+
+
     <Router>
+    
     <Navbar/>
     
 
     <Switch>
       <Route path="/" exact component={Inicio} />
       <Route path="/Sitios" exact component={Sitios}/>
-      <Route path="/Registro" exact component={Registro}/>
+      <Route path="/Login" exact component={Login}/>
       <Route path="/Bonampak" exact component={Bonampak}/>
       <Route path="/Palenque" exact component={Palenque}/>
       <Route path="/Yaxchilan" exact component={Yaxchilan}/>
@@ -43,10 +53,15 @@ function App() {
       <Route path="/Cañon" exact component={Cañon}/>
       <Route path="/Montebello" exact component={Montebello}/>
       <Route path="/Chiflon" exact component={Chiflon}/>
-      <Route path="/Login" exact component={Login}/>
+      <Route path="/Loginn" exact component={Loginn}/>
+      <Route path="/Logout" exact component={Logout}/>
+      
+      
+
     
     </Switch>
     </Router>
+    
     
     <ToastContainer/>
     <Footer/>

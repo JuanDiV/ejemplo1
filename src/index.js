@@ -4,6 +4,8 @@ import './index.css';
 //import Principal from './Principal';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Auth0Provider } from '@auth0/auth0-react';
+
 
 //import firebaseConfig from './firebase-config';
 //import 'animate.css/animate.min.css'  
@@ -20,10 +22,12 @@ import 'react-toastify/dist/ReactToastify.css';
 
 ReactDOM.render(
   <React.StrictMode>
-
-   
-    <App />              
-    
+<Auth0Provider
+      domain="dev-qbncf3j3.us.auth0.com"
+      clientId="LymAwWiZEgAc35dWuiGklukym4IQV9KN"
+      redirectUri={window.location.origin}>
+      <App />
+    </Auth0Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

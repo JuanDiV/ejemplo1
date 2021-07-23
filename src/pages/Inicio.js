@@ -8,7 +8,6 @@ const Inicio = () => {
     return (
       <div >
         
-        
       <CarrouselInicio/>  
       
       

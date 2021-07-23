@@ -1,9 +1,16 @@
 import React from "react";
 import {Link} from "react-router-dom";
 //import Registro from "../components/Registro/Registro";
-
+import { useAuth0 } from "@auth0/auth0-react";
+import Loginn from '../components/Loginn'
+import Logout from "../components/Logout"
 
 const Navbar = () => {
+  const { isAuthenticated, isLoading } = useAuth0();
+  if (isLoading) {
+    return <div>Loading ...</div>;
+  }
+
   return (
     <div>
 
@@ -44,25 +51,33 @@ const Navbar = () => {
                   Comentarios
                 </Link>
               </li>
+
               
+            {isAuthenticated ? (
+              <>
               <li class="nav-item">
-                <Link class="nav-link" to="/Registro">
-                  Registro
-                </Link>
+              <Link class="nav-link" to="/">
+                Inicio
+              </Link>
+            </li>
+                <li class="nav-item">
+                  
+                   <Logout></Logout>
+                  
+                </li>
+              </>
+            ) : (
+              <li class="nav-item">
+                
+                  <Loginn></Loginn>
+                
               </li>
+            )}
+              
+  
   
             </ul>
-            <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+            
           </div>
         </div>
       </nav>
